@@ -1,0 +1,48 @@
+:root {
+  --preto: #040714;
+  --cinza: silver;
+  --branco: #f9f9f9;
+  --verde-escuro: #15454f;
+  --azul-escuro: #272b3a;
+  --azul: #0072d2;
+  --silver: #494959;
+  --amarelo: #f0bf4c;
+  --rosa-claro: #ffebee;
+  --azul-claro: #1d96d7;
+
+  --type-first: "Nunito Sans", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+body {
+  background-color: var(--preto);
+  font-family: var(--type-first);
+  color: var(--cinza);
+  -webkit-font-smoothing: antialiased;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  position: relative;
+  z-index: 99;
+}

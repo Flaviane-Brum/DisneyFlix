@@ -1,0 +1,148 @@
+.banner-principal {
+  border-bottom: 1px solid var(--verde-escuro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.container-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.container-banner {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 99;
+}
+.container-banner h1 {
+  color: var(--branco);
+  font-family: var(--type-first);
+  text-shadow: 0px 3px #000;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.container-banner .descricao {
+  max-width: 600px;
+  position: absolute;
+  color: #fff;
+  padding: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container-banner .descricao p {
+  color: #fff;
+  text-shadow: 0px 1px #000;
+  line-height: 1.55;
+  font-weight: bold;
+}
+
+.botoes {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+.botoes button {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.8rem 1.5rem;
+  border: 0;
+  font-family: var(--type-first);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: var(--branco);
+  transition: all 0.3s;
+  border-radius: 5px;
+  font-weight: 700;
+  text-shadow: 0px 1px #000;
+  text-transform: uppercase;
+  box-shadow: 1px 1px #000;
+}
+.botoes button a {
+  color: #fff;
+  text-decoration: none;
+}
+.botoes button i {
+  font-size: 1.3rem;
+  color: var(--branco);
+}
+
+.botoes button:hover {
+  background-color: var(--azul);
+}
+
+@media screen and (max-width: 755px) {
+  .container-banner h1 {
+    color: var(--branco);
+    font-family: var(--type-first);
+    text-shadow: 0px 3px #000;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  .container-banner .descricao {
+    position: absolute;
+    color: #fff;
+    padding: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .container-banner .descricao p {
+    color: #fff;
+    text-shadow: 0px 1px #000;
+    line-height: 1.55;
+    font-weight: bold;
+  }
+  .botoes button {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1.5rem;
+    border: 0;
+    font-family: var(--type-first);
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--branco);
+    transition: all 0.3s;
+    border-radius: 5px;
+    font-weight: 400;
+    text-shadow: 0px 1px #000;
+    text-transform: uppercase;
+    box-shadow: 1px 1px #000;
+  }
+  .botoes button i {
+    font-size: 1rem;
+    color: var(--branco);
+  }
+}
+@media screen and (max-width: 566px) {
+  .container-banner .descricao p {
+    display: none;
+  }
+  .container-banner .descricao {
+    position: absolute;
+    color: #fff;
+    padding: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .botoes button {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+  }
+  .container-banner h1 {
+    font-size: 1.5rem;
+  }
+}

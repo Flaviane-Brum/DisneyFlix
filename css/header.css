@@ -1,0 +1,36 @@
+.logo img {
+  filter: drop-shadow(0 1px 2px #35181f);
+}
+header .container-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  max-width: 1300px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+.menu ul li {
+  padding: 0.5rem;
+}
+.menu ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: var(--cinza);
+  font-family: var(--type-first);
+}
+.menu ul li a:hover {
+  color: var(--branco);
+}
+
+@media (max-width: 516px) {
+  header .container-header {
+    justify-content: center;
+  }
+}
